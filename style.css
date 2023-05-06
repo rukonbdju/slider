@@ -115,7 +115,7 @@ ion-icon:hover{
 
 
 .slider-items{
-    width: 70vw;
+    width: 90vw;
     margin: auto;
     overflow-x: auto;
     box-sizing:inherit;
@@ -126,7 +126,7 @@ ion-icon:hover{
 
 .slider-image img{
     border-radius: 10px;
-    width: 70vw;
+    width: 90vw;
     height: 100%;
     margin: auto;
     object-fit: cover; 
