@@ -16,7 +16,7 @@ const handleTranslate=(sliderImage)=>{
             translate = 0;
         }
         element.style.transform = `translateX(${translate}%)`
-        element.style.transition = 'all 1s'
+        element.style.transition = 'all 1s cubic-bezier(0.5, 0.48, 0.61, 0.59)'
     }
 }
 
