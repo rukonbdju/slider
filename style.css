@@ -106,10 +106,12 @@ nav {
   transform: translateY(-50%);
 }
 body {
+  position: relative;
   background-color: rgb(27, 27, 27);
 }
 
 ion-icon {
+  color: white;
   padding: 4px;
   background-color: rgb(66, 66, 66);
   border-radius: 100%;
@@ -117,6 +119,13 @@ ion-icon {
 }
 ion-icon:hover {
   background-color: rgb(35, 35, 35);
+}
+
+#up-arrow{
+  display: none;
+  position: fixed;
+  top: 85vh;
+  right: 50px;
 }
 
 .slider-items {

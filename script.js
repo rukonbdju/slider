@@ -2,14 +2,25 @@ const rightArrow = document.getElementById('right-arrow')
 const leftArrow = document.getElementById('left-arrow')
 const sliderImage = document.getElementsByClassName('slider-image')
 const menu = document.getElementById('icon')
+const upArrow = document.getElementById('up-arrow')
 menu.addEventListener('click', (e) => {
     document.getElementById('menu').style.display = 'flex'
 })
 
 
-var prevScrollpos = window.pageYOffset;
+let scroll = window.scrollY;
+console.log(scroll)
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
+    if(window.scrollY>window.innerHeight/2){
+        upArrow.style.display='block'
+    }
+    if(window.scrollY<window.innerHeight/2){
+        upArrow.style.display='none'
+    }
+    let scroll = window.scrollY;
+    console.log(scroll)
+    let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("nav-container").style.top = "0";
     } else {
